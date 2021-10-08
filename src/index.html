@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Питомник Мейн-Кунов</title>
     <link rel="stylesheet" href="#">
-    <link rel="preload" href="../src/fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="../src/fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="../src/fonts/Robotolight.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="../src/fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="../src/fonts/Yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Robotolight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="..//fonts/Yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
 <body>
@@ -179,64 +179,58 @@
         
     </script> -->
 
-    <header>
-        <nav>
-            <ul id="menu">
-                <li><a style="display:none" class="btn" href="#">====</a>
-                    <ul>
-                        <li class="nav_item">
+    <!-- HEADER -->
+
+    <header class="header">
+        <a class="header__logo"><img src="img/icons/logo.svg" alt="Логотип" width="55" height="25"></a>
+        <nav class="header__nav">
+            <ul class="header__list" id="menu">
+                <li class="header__item"><a style="display:none" class="btn" href="#">====</a>
+                    <ul class="header__submenu">
+                        <li class="header_item">
                             <a href="#">Главная</a>
                         </li>
-                        <li class="nav_item">
-                            <a href="#"></a>Питомник
+                        <li class="header_item">
+                            <a href="#">Питомник</a>
                         </li>
-                        <li class="nav_item">
-                            <a href="#"></a>Контакты
+                        <li class="header_item">
+                            <a href="#">Контакты</a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <a><img src="img/icons/logo.svg" alt="Логотип" class="header__logo" width="55" height="25"></a>
-    </header>
-
-    <!--  WELCOME_PAGE  -->
-
-    <section class="welcome">
-        <div class="welcome_wrapper">
-
-            <ul class="welcome__social">
-                <li class="welcome__social-item welcome__social-item--fb social__item social__item--fb">
+        <div class="header__wrapper">
+            <div class="header__text">
+                <p class="header__city">Новосибирск</p>
+                <h1 class="header__title">Питомник Мейн-Кунов</h1>
+                <p class="header__subtitle">Первый питомник с расширенным спектром услуг</p>
+                <a href="#" class="header__btn button">Смотреть котиков</a>
+            </div>
+            <ul class="header__social social">
+                <li class="header__social-item header__social-item--fb social__item social__item--fb">
                     <a href="#" aria-label="Мы в Фейсбуке">
-                        <svg class="welcome__social-svg" width="7" height="15">
-                            <use xlink:href="#fb"></use>
-                        </svg>
+                        <svg class="header__social-svg" width="7" height="15">
+                        <use xlink:href="#fb"></use>
+                    </svg>
                     </a>
                 </li>
-                <li class="welcome__social-item welcome__social-item--tw social__item social__item--tw">
+                <li class="header__social-item header__social-item--tw social__item social__item--tw">
                     <a href="#" aria-label="Мы в Твиттере">
-                        <svg class="welcome__social-svg" width="21" height="14">
-                            <use xlink:href="#tw"></use>
-                        </svg>
+                        <svg class="header__social-svg" width="21" height="14">
+                        <use xlink:href="#tw"></use>
+                    </svg>
                     </a>
                 </li>
-                <li class="welcome__social-item welcome__social-item--vk social__item social__item--vk">
+                <li class="header__social-item header__social-item--vk social__item social__item--vk">
                     <a href="#" aria-label="Мы в Вконтакте">
-                        <svg class="welcome__social-svg" width="22" height="12">
-                            <use xlink:href="#vk"></use>
-                        </svg>
+                        <svg class="header__social-svg" width="22" height="12">
+                        <use xlink:href="#vk"></use>
+                    </svg>
                     </a>
                 </li>
             </ul>
-
-            <div class="welcome__text">
-                <div class="welcome__city">Новосибирск</div>
-                <h1 class="welcome__title">Питомник Мейн-Кунов</h1>
-                <div class="welcome__subtitle">Первый питомник с расширенным спектром услуг</div>
-                <a href="#" class="button welcome__btn">Смотреть котиков</a>
-            </div>
         </div>
-
         <picture>
             <source type="image/webp" media="(max-width: 768px)" srcset="img/HeaderCat-mobile@1x.webp 1x, img/HeaderCat-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 980px)" srcset="img/HeaderCat-tablet@1x.webp 1x, img/HeaderCat-tablet@2x.webp 2x">
@@ -246,18 +240,18 @@
             <source media="(max-width: 980px)" srcset="img/HeaderCat-tablet@1x.png 1x, img/HeaderCat-tablet@2x.png 2x">
             <img class="header__cat" src="img/HeaderCat-desktop@1x.png" srcset="img/HeaderCat-desktop@2x.png 2x" alt="Рыжий Мейн кун" width="796" height="666">
         </picture>
-    </section>
+    </header>
 
     <!--  MAIN  -->
 
     <main>
 
         <!--  PETS  -->
-        <!-- Сделать еще два контейнера с кошками и котятами-->
+
         <section class="pets">
-            <div class="pets__container">
+            <div class="pets__container container">
                 <h2 class="title pets__title">Питомцы</h2>
-                <div class="pets__descr">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</div>
+                <p class="pets__descr">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
                 <ul class="pets__list">
                     <li class="pets__item active"><button>Коты</button></li>
                     <li class="pets__item"><button>Кошки</button></li>
@@ -282,7 +276,7 @@
 
         <section class="features">
             <h2 class="title features__title">Особенности породы</h2>
-            <div class="features__descr">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </div>
+            <p class="features__descr">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </p>
             <div class="features__cat">
                 <picture>
                     <source type="image/webp" media="(min-width: 1105px)" srcset="img/FeatureCat-desktop@1x.webp 1x, img/FeatureCat-desktop@2x.webp 2x">
@@ -301,14 +295,14 @@
 
         <section class="about">
             <h2 class="title about__title">Почему именно мы?</h2>
-            <div class="about__subtitle">Приобретая животное в нашем питомнике, вы получите</div>
+            <p class="about__subtitle">Приобретая животное в нашем питомнике, вы получите</p>
             <ul class="about__list">
                 <li class="about__item">
                     <div class="about__block">
                         <svg class="about__icon about__icon--year" width="98" height="107">
                         <use xlink:href="#year"></use>
                         </svg>
-                        <div class="about__text">Бесплатное ветеринарное обслуживание 5 лет</div>
+                        <p class="about__text">Бесплатное ветеринарное обслуживание 5 лет</p>
                     </div>
                 </li>
                 <li class="about__item">
@@ -316,7 +310,7 @@
                         <svg class="about__icon about__icon--day" width="107" height="96">
                             <use xlink:href="#day"></use>
                         </svg>
-                        <div class="about__text">Консультирование по любому вопросу 24 часа в сутки</div>
+                        <p class="about__text">Консультирование по любому вопросу 24 часа в сутки</p>
                     </div>
                 </li>
                 <li class="about__item">
@@ -324,7 +318,7 @@
                         <svg class="about__icon about__icon--corm" width="71" height="108">
                             <use xlink:href="#corm"></use>
                         </svg>
-                        <div class="about__text">Индивидуальный подбор питания для вашего кота</div>
+                        <p class="about__text">Индивидуальный подбор питания для вашего кота</p>
                     </div>
                 </li>
             </ul>
@@ -336,23 +330,23 @@
             <h2 class="care__title title">Об уходе за Мейн-Куном</h2>
             <ul class="care__list">
                 <li class="care__item">
-                    <div class="care__subtitle">Шерсть</div>
-                    <div class="care__descr">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</div>
+                    <h3 class="care__subtitle">Шерсть</h3>
+                    <p class="care__descr">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p>
                     <a href="#" class="care__button" aria-label="Подробнее о шерсти"></a>
                 </li>
                 <li class="care__item">
-                    <div class="care__subtitle">Когти</div>
-                    <div class="care__descr">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</div>
+                    <h3 class="care__subtitle">Когти</h3>
+                    <p class="care__descr">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</p>
                     <a href="#" class="care__button" aria-label="Подробнее о когтях"></a>
                 </li>
                 <li class="care__item">
-                    <div class="care__subtitle">Уши и глаза</div>
-                    <div class="care__descr">Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может быть признаками заболевания</div>
+                    <h3 class="care__subtitle">Уши и глаза</h3>
+                    <p class="care__descr">Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может быть признаками заболевания</p>
                     <a href="#" class="care__button" aria-label="Подробнее об ушах и глазах"></a>
                 </li>
                 <li class="care__item">
-                    <div class="care__subtitle">Питание</div>
-                    <div class="care__descr">В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам</div>
+                    <h3 class="care__subtitle">Питание</h3>
+                    <p class="care__descr">В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам</p>
                     <a href="#" class="care__button" aria-label="Подробнее о питании"></a>
                 </li>
             </ul>
@@ -362,7 +356,7 @@
 
         <section class="team">
             <h2 class="team__title title">Наша команда</h2>
-            <div class="team__subtitle">Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</div>
+            <p class="team__subtitle">Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</p>
             <div class="team__block">
                 <div class="team__block-inner">
                     <div class="team__photo-wrapper">
@@ -381,9 +375,9 @@
                         </div>
                     </div>
                     <div class="team__block-content">
-                        <div class="team__name">Серёжа Попов</div>
-                        <div class="team__post">Основатель питомника</div>
-                        <div class="team__descr">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</div>
+                        <h3 class="team__name">Серёжа Попов</h3>
+                        <p class="team__post">Основатель питомника</p>
+                        <p class="team__descr">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
                         <ul class="social team__social">
                             <li class="social__item social__item--fb">
                                 <a href="#" aria-label="Мы в Фейсбуке">
@@ -409,9 +403,9 @@
                         </ul>
                     </div>
                     <div class="team__block-content">
-                        <div class="team__name">Иван Сергеев</div>
-                        <div class="team__post">Менеджер</div>
-                        <div class="team__descr">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</div>
+                        <h3 class="team__name">Иван Сергеев</h3>
+                        <p class="team__post">Менеджер</p>
+                        <p class="team__descr">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
                         <ul class="social team__social">
                             <li class="social__item social__item--fb">
                                 <a href="#" aria-label="Мы в Фейсбуке">
@@ -437,9 +431,9 @@
                         </ul>
                     </div>
                     <div class="team__block-content">
-                        <div class="team__name">Светлана Васильева</div>
-                        <div class="team__post">HR</div>
-                        <div class="team__descr">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</div>
+                        <h3 class="team__name">Светлана Васильева</h3>
+                        <p class="team__post">HR</p>
+                        <p class="team__descr">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
                         <ul class="social team__social">
                             <li class="social__item social__item--fb">
                                 <a href="#" aria-label="Мы в Фейсбуке">
@@ -474,11 +468,11 @@
 
         <section class="answers">
             <h2 class="answers__title title">Вопрос-Ответ</h2>
-            <div class="answers__subtitle">Мы ответим на самые популярные ваши вопросы</div>
+            <p class="answers__subtitle">Мы ответим на самые популярные ваши вопросы</p>
             <ol class="answers__list">
                 <li class="answers__item active">
                     <div class="answers__question">
-                        <div class="answers__text">С какого возраста можно забирать котенка из питомника?</div>
+                        <p class="answers__text">С какого возраста можно забирать котенка из питомника?</p>
                         <button class="answers__button" aria-label="Посмотреть ответ 1"></button>
                     </div>
                     <div class="answers__answer">
@@ -492,7 +486,7 @@
                 </li>
                 <li class="answers__item">
                     <div class="answers__question">
-                        <div class="answers__text">Как зарезервировать котенка?</div>
+                        <p class="answers__text">Как зарезервировать котенка?</p>
                         <button class="answers__button" aria-label="Посмотреть ответ 2"></button>
                     </div>
                     <div class="answers__answer">
@@ -506,7 +500,7 @@
                 </li>
                 <li class="answers__item">
                     <div class="answers__question">
-                        <div class="answers__text">Можно ли купить кота, если я живу в другом городе?</div>
+                        <p class="answers__text">Можно ли купить кота, если я живу в другом городе?</p>
                         <button class="answers__button" aria-label="Посмотреть ответ 3"></button>
                     </div>
                     <div class="answers__answer">
@@ -520,7 +514,7 @@
                 </li>
                 <li class="answers__item">
                     <div class="answers__question">
-                        <div class="answers__text">Как подготовить дом к приему нового питомца? </div>
+                        <p class="answers__text">Как подготовить дом к приему нового питомца? </p>
                         <button class="answers__button" aria-label="Посмотреть ответ 4"></button>
                     </div>
                     <div class="answers__answer">
@@ -533,8 +527,7 @@
                     </div>
                 </li>
             </ol>
-            <!-- добавить задать вопрос
-            (ссылка)-->
+            <a class="answer__button button" href="#">Задать вопрос</a>
         </section>
 
         <!-- REVIEW -->
@@ -558,8 +551,8 @@
                     </div>
                 </div>
                 <div class="feedback__block-content">
-                    <div class="feedback__name">Серёжа Попов</div>
-                    <div class="feedback__descr">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</div>
+                    <h3 class="feedback__name">Серёжа Попов</h3>
+                    <p class="feedback__descr">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
                     <div class="feedback__down">
                         <div class="feedback__date">24 мая 2018</div>
                         <ul class="social feedback__social">
@@ -581,8 +574,8 @@
                     </div>
                 </div>
                 <div class="feedback__block-content">
-                    <div class="feedback__name">Иван Сергеев</div>
-                    <div class="feedback__descr">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</div>
+                    <h3 class="feedback__name">Иван Сергеев</h3>
+                    <p class="feedback__descr">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
                     <div class="feedback__down">
                         <div class="feedback__date">30 июня 2018</div>
                         <ul class="social feedback__social">
@@ -604,10 +597,10 @@
                     </div>
                 </div>
                 <div class="feedback__block-content">
-                    <div class="feedback__name">Светлана Васильева</div>
-                    <div class="feedback__descr">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</div>
+                    <h3 class="feedback__name">Светлана Васильева</h3>
+                    <p class="feedback__descr">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
                     <div class="feedback__down">
-                        <div class="feedbackl__date">02 февраля 2018</div>
+                        <div class="feedback__date">02 февраля 2018</div>
                         <ul class="social feedback__social">
                             <li class="social__item social__item--tw">
                                 <a href="#" aria-label="Мы в Твиттере">

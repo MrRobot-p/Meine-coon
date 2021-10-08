@@ -1,0 +1,31 @@
+.about {
+    background-color: $dark-gray;
+    text-align: center;
+}
+
+.about__item {
+    background-color: $light-gray;
+}
+
+.about__item svg {
+    fill: $light-gold;
+    stroke: $light-gray;
+}
+
+.about__item:hover svg {
+    fill: $white;
+    stroke: $light-gold;
+}
+
+.about__item:hover .about__block {
+    background-color: $light-gold;
+}
+
+.about__text {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.about__subtitle {
+    color: $light-gold;
+}

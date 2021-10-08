@@ -1,5 +1,16 @@
 @import "vendor/normalize.scss",
-  "base/variables.scss",
-  "base/typography.scss",
-  "base/global.scss";
-@import "components/style.scss";
+"base/variables.scss",
+"base/typography.scss",
+"base/global.scss";
+@import "components/title/title.scss",
+"components/header/header.scss",
+"components/social/social.scss",
+"components/button/button.scss",
+"components/pets/pets.scss",
+"components/features/features.scss",
+"components/about/about.scss",
+"components/care/care.scss",
+"components/team/team.scss",
+"components/answers/answers.scss",
+"components/feedback/feedback.scss",
+"components/footer/footer.scss";

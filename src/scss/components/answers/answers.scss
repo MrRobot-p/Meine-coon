@@ -1,0 +1,130 @@
+.answers__title {}
+
+.answers__subtitle {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.answers__list {
+    list-style: none;
+    counter-reset: num;
+    padding: 0;
+    margin: 0 auto;
+    color: #ddd0c3;
+    line-height: 24px;
+}
+
+.answers__item {
+    position: relative;
+}
+
+.answers__item:before {
+    position: absolute;
+    content: "0" counter(num);
+    counter-increment: num;
+    font-weight: 700;
+    color: $light-gold;
+}
+
+.answers__item.active .answers__answer {
+    display: block;
+}
+
+.answers__item.active .answers__answer-wrap {
+    -webkit-animation-name: answer;
+    animation-name: answer;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+.answers__item.active .answers__button {
+    background-color: $light-gold;
+}
+
+.answers__item.active .answers__button::before,
+.answers__item.active .answers__button::after {
+    background-color: $white;
+}
+
+.answers__item.active .answers__button::before {
+    width: 18px;
+    height: 2px;
+}
+
+.answers__item.active .answers__button::after {
+    width: 0;
+    height: 0;
+}
+
+.answers__question {
+    position: relative;
+    border: 0.5px solid $light-gold;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.answers__question:hover .answers__button,
+.answers__question:focus .answers__button {
+    background-color: $light-gold;
+}
+
+.answers__question:hover .answers__button::before,
+.answers__question:hover .answers__button::after,
+.answers__question:focus .answers__button::before,
+.answers__question:focus .answers__button::after {
+    background-color: $white;
+}
+
+.answers__button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    border-left: 0.5px solid $light-gold;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.answers__button::before,
+.answers__button::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: $light-gold;
+}
+
+.answers__button::before {
+    width: 18px;
+    height: 2px;
+}
+
+.answers__button::after {
+    width: 2px;
+    height: 18px;
+}
+
+.answers__answer {
+    overflow: hidden;
+    display: none;
+    border-left: 0.5px solid $light-gold;
+    border-right: 0.5px solid $light-gold;
+    border-bottom: 0.5px solid $light-gold;
+    font-weight: 300;
+}

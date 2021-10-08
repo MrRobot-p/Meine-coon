@@ -1,0 +1,38 @@
+.team {
+    background-color: $dark-gray;
+}
+
+.team__subtitle {
+    margin: 0 auto;
+    text-align: center;
+    color: $light-gold;
+}
+
+.team__block {
+    position: relative;
+    margin: 0 auto;
+    background-color: $light-gray;
+}
+
+.team__name {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $light-gold;
+}
+
+.team__descr {
+    color: $white;
+    font-weight: 300;
+}
+
+.team__social svg {
+    fill: $white;
+    &:hover {
+        fill: $light-gold;
+    }
+}
+
+.team__post {
+    color: $light-gold;
+}

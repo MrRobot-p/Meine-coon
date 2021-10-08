@@ -1,0 +1,29 @@
+.button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    min-height: 52px;
+    background-color: transparent;
+    border: 0.5px solid $light-gold;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        background-color: $light-gold;
+    }
+    &:active {
+        opacity: 0.9;
+    }
+}

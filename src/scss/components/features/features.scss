@@ -1,0 +1,28 @@
+.features {
+    margin: 0 auto;
+}
+
+.features__title {
+    margin-bottom: 23px;
+}
+
+.features__descr {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+    color: $light-gold;
+}
+
+.features__text {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.features__text::before {
+    position: absolute;
+    content: "";
+    background-color: $light-gold;
+    border-radius: 50%;
+}

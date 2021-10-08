@@ -1,0 +1,55 @@
+.pets {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pets__descr {
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: 300;
+    line-height: 26px;
+    color: $light-gold;
+}
+
+.pets__list {
+    list-style: none;
+    text-align: center;
+}
+
+.pets__item+.pets__item {
+    margin-left: 40px;
+}
+
+.pets__item button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.2;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.pets__item button:hover,
+.pets__item button:focus {
+    opacity: 1;
+}
+
+.pets__item button:active {
+    opacity: 0.5;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.pets__item.active button {
+    opacity: 1;
+}
+
+.pets__button {
+    margin: 0 auto;
+}

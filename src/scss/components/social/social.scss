@@ -1,0 +1,27 @@
+.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social__item a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.social__item a:focus,
+.social__item a:hover {
+    fill: $white;
+    outline: none;
+}
+
+.social__item a:active {
+    opacity: 0.5;
+    fill: $white;
+}
+
+.social__item+.social__item {
+    margin-left: 10px;
+}

@@ -1,0 +1,47 @@
+.header {
+    background: $dark_gray;
+    overflow: hidden;
+    .header__list {
+        list-style: none;
+    }
+    .header__submenu {
+        list-style: none;
+    }
+    .header_item a {
+        color: $white;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        opacity: 0.5;
+        outline: none;
+        &:hover {
+            opacity: 1;
+        }
+        &:focus {
+            opacity: 1;
+        }
+    }
+    .header__city {
+        color: $light-gold;
+        font-size: 16px;
+    }
+    .header__title {
+        width: 350px;
+        color: #ffffff;
+        font-family: "YesevaOne", "Arial", cursive;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 60px;
+    }
+    .header__subtitle {
+        color: $light-gold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header__social-item a:hover {
+        opacity: 0.5;
+    }
+    .header__social-svg {
+        fill: $white;
+        stroke: $white;
+    }
+}
