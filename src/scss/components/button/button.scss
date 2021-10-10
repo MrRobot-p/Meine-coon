@@ -27,3 +27,71 @@
         opacity: 0.9;
     }
 }
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .button {
+        font-size: 12px;
+        line-height: 20px;
+        width: 140px;
+        min-height: 40px;
+        margin: 0 auto;
+    }
+}
+
+.button__arrow {
+    width: 12px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.button__arrow--left {
+    background-image: url(../img/icons/sliderLeft.svg);
+}
+
+.button__arrow--right {
+    background-image: url(../img/icons/sliderRight.svg);
+}
+
+@media (min-width: 769px) {
+    .button__arrow {
+        opacity: 0.5;
+    }
+    .button__arrow:hover,
+    .button__arrow:focus {
+        opacity: 1;
+        outline: none;
+    }
+    .button__arrow:active {
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .button__arrow {
+        width: 8px;
+        height: 18px;
+        opacity: 1;
+    }
+    .button__arrow:hover,
+    .button__arrow:focus {
+        opacity: 0.7;
+        outline: none;
+    }
+    .button__arrow:active {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .button__arrow {
+        width: 8px;
+        height: 18px;
+    }
+}

@@ -3,6 +3,8 @@
 }
 
 .footer__wrapper {
+    width: 850px;
+    padding: 70px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -13,6 +15,7 @@
 }
 
 .footer__contacts {
+    width: 670px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -36,12 +39,14 @@
 }
 
 .footer__address {
-    color: #fdf2e6;
+    width: 350px;
+    margin-left: 20px;
+    color: $white;
     font-size: 14px;
 }
 
 .footer__tel a {
-    color: #fdf2e6;
+    color: $white;
     font-size: 14px;
     font-weight: 700;
     -webkit-transition: 0.3s;
@@ -56,4 +61,17 @@
 
 .footer__tel a:active {
     opacity: 0.2;
+}
+
+.footer__logo {
+    margin-right: 120px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.footer__logo-svg {
+    fill: $light-gold;
+    &:hover {
+        fill: $white;
+    }
 }

@@ -1,4 +1,10 @@
-.answers__title {}
+.answers {
+    padding: 75px 40px 80px;
+}
+
+.answers__title {
+    margin-bottom: 20px;
+}
 
 .answers__subtitle {
     margin: 0 auto;
@@ -8,16 +14,23 @@
 }
 
 .answers__list {
+    width: 800px;
     list-style: none;
     counter-reset: num;
     padding: 0;
     margin: 0 auto;
-    color: #ddd0c3;
+    color: $white;
     line-height: 24px;
 }
 
 .answers__item {
     position: relative;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+.answers__item:not(:last-child) {
+    margin-bottom: 38px;
 }
 
 .answers__item:before {
@@ -26,6 +39,9 @@
     counter-increment: num;
     font-weight: 700;
     color: $light-gold;
+    top: 50px;
+    left: -110px;
+    font-size: 70px;
 }
 
 .answers__item.active .answers__answer {
@@ -69,6 +85,7 @@
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
+    padding: 25px 150px 25px 42px;
 }
 
 .answers__question:hover .answers__button,
@@ -93,10 +110,15 @@
     border-right: none;
     border-bottom: none;
     outline: none;
+    width: 104px;
     border-left: 0.5px solid $light-gold;
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+}
+
+.answer__button {
+    margin: 35px 153px 0 auto;
 }
 
 .answers__button::before,
@@ -121,10 +143,37 @@
 }
 
 .answers__answer {
+    padding: 30px 200px 40px 42px;
     overflow: hidden;
     display: none;
     border-left: 0.5px solid $light-gold;
     border-right: 0.5px solid $light-gold;
     border-bottom: 0.5px solid $light-gold;
     font-weight: 300;
+}
+
+@-webkit-keyframes answer {
+    0% {
+        display: none;
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
+    100% {
+        display: block;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes answer {
+    0% {
+        display: none;
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
+    100% {
+        display: block;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }

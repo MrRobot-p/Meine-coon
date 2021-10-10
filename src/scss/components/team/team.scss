@@ -1,10 +1,18 @@
 .team {
     background-color: $dark-gray;
+    padding: 80px 185px 70px;
+}
+
+.team__title {
+    margin-bottom: 20px;
 }
 
 .team__subtitle {
+    max-width: 510px;
     margin: 0 auto;
+    margin-bottom: 25px;
     text-align: center;
+    line-height: 26px;
     color: $light-gold;
 }
 
@@ -12,6 +20,29 @@
     position: relative;
     margin: 0 auto;
     background-color: $light-gray;
+    width: 660px;
+    border: 24px solid $dark-gray;
+    outline: 0.5px solid $dark-gold;
+    left: 155px;
+    padding: 70px 100px;
+}
+
+.team__block-content {
+    display: none;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.team__block-content--active {
+    display: block;
+    opacity: 1;
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
 .team__name {
@@ -23,7 +54,28 @@
 
 .team__descr {
     color: $white;
+    margin-bottom: 45px;
     font-weight: 300;
+    line-height: 25px;
+}
+
+.team__photo-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 360px;
+    height: 356px;
+    left: -332px;
+    top: -26px;
+}
+
+.team__photo-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .team__social svg {
@@ -35,4 +87,29 @@
 
 .team__post {
     color: $light-gold;
+    margin-bottom: 25px;
+}
+
+.team__button {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.team__button--left {
+    left: -400px;
+}
+
+.team__button--right {
+    right: -100px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
