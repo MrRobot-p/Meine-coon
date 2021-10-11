@@ -10,7 +10,7 @@
     <link rel="preload" href="../fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="../fonts/Robotolight.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="../fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="..//fonts/Yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="..//fonts/yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
 <body>
@@ -155,7 +155,7 @@
         function initScript() {
             var _menu = document.getElementById('menu');
             var _itemMenu = _menu.getElementsByTagName('ul');
-            var _btn = _menu.getElementsByTagName('a');
+            var _btn = _menu.getElementsByTagName('button');
 
             for (var i = 0; i < _itemMenu.length; i++) {
                 _itemMenu[i].style.display = 'none';
@@ -187,13 +187,13 @@
         <div class="container">
             <a href="#" class="header__logo">
                 <svg class="header__logo-svg" width="55" height="55">
-                <use xlink:href="#crown"></use>
-              </svg>
+                    <use xlink:href="#crown"></use>
+                </svg>
             </a>
             <div class="header__wrapper">
                 <nav class="header__nav">
                     <ul class="header__list" id="menu">
-                        <li class="header__item"><a style="display:none" class="btn" href="#">====</a>
+                        <li class="header__item"><button style="display:none" class="btn" href="#">====</button>
                             <ul class="header__submenu">
                                 <li class="header_item">
                                     <a href="#">Главная</a>
@@ -218,22 +218,22 @@
                     <li class="header__social-item header__social-item--fb social__item social__item--fb">
                         <a href="#" aria-label="Мы в Фейсбуке">
                             <svg class="header__social-svg" width="7" height="15">
-                        <use xlink:href="#fb"></use>
-                    </svg>
+                                <use xlink:href="#fb"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="header__social-item header__social-item--tw social__item social__item--tw">
                         <a href="#" aria-label="Мы в Твиттере">
                             <svg class="header__social-svg" width="21" height="14">
-                        <use xlink:href="#tw"></use>
-                    </svg>
+                                <use xlink:href="#tw"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="header__social-item header__social-item--vk social__item social__item--vk">
                         <a href="#" aria-label="Мы в Вконтакте">
                             <svg class="header__social-svg" width="22" height="12">
-                        <use xlink:href="#vk"></use>
-                    </svg>
+                                <use xlink:href="#vk"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>
@@ -270,9 +270,9 @@
                     <button class="pets__arrow pets__arrow--left button__arrow button__arrow--left" aria-label="Листать влево"></button>
                     <div class="pets__photo--wrapper">
                         <div class="pets__photo--inner">
-                            <img class="pets__photo" src="img/cat1.jpg" srcset="img/cat1@2x.jpg 2x" alt="Белый окрас" width="517" height="214">
-                            <img class="pets__photo" src="img/cat3.jpg" srcset="img/cat3@2x.jpg 2x" alt="Белый окрас" width="471" height="485">
-                            <img class="pets__photo" src="img/cat2.jpg" srcset="img/cat2@2x.jpg 2x" alt="Белый окрас" width="517" height="214">
+                            <img class="pets__photo pets__photo--left" src="img/cat1.jpg" srcset="img/cat1@2x.jpg 2x" alt="Белый окрас" width="517" height="214">
+                            <img class="pets__photo pets__photo--center" src="img/cat3.jpg" srcset="img/cat3@2x.jpg 2x" alt="Белый окрас" width="471" height="485">
+                            <img class="pets__photo pets__photo--right" src="img/cat2.jpg" srcset="img/cat2@2x.jpg 2x" alt="Белый окрас" width="517" height="214">
                         </div>
                     </div>
                     <button class="pets__arrow pets__arrow--right button__arrow button__arrow--right" aria-label="Листать вправо"></button>
@@ -312,8 +312,8 @@
                     <li class="about__item">
                         <div class="about__block">
                             <svg class="about__icon about__icon--year" width="98" height="107">
-                        <use xlink:href="#year"></use>
-                        </svg>
+                                <use xlink:href="#year"></use>
+                            </svg>
                             <p class="about__text">Бесплатное ветеринарное обслуживание 5 лет</p>
                         </div>
                     </li>
@@ -321,15 +321,15 @@
                         <div class="about__block">
                             <svg class="about__icon about__icon--day" width="107" height="96">
                             <use xlink:href="#day"></use>
-                        </svg>
+                            </svg>
                             <p class="about__text">Консультирование по любому вопросу 24 часа в сутки</p>
                         </div>
                     </li>
                     <li class="about__item">
                         <div class="about__block">
                             <svg class="about__icon about__icon--corm" width="71" height="108">
-                            <use xlink:href="#corm"></use>
-                        </svg>
+                                <use xlink:href="#corm"></use>
+                            </svg>
                             <p class="about__text">Индивидуальный подбор питания для вашего кота</p>
                         </div>
                     </li>
@@ -399,22 +399,22 @@
                                 <li class="social__item social__item--fb">
                                     <a href="#" aria-label="Мы в Фейсбуке">
                                         <svg width="7" height="15">
-                                <use xlink:href="#fb"></use>
-                            </svg>
+                                            <use xlink:href="#fb"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--tw">
                                     <a href="#" aria-label="Мы в Твиттере">
                                         <svg width="21" height="14">
-                                <use xlink:href="#tw"></use>
-                            </svg>
+                                            <use xlink:href="#tw"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--vk">
                                     <a href="#" aria-label="Мы в Вконтакте">
                                         <svg width="22" height="12">
-                                <use xlink:href="#vk"></use>
-                            </svg>
+                                            <use xlink:href="#vk"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -427,22 +427,22 @@
                                 <li class="social__item social__item--fb">
                                     <a href="#" aria-label="Мы в Фейсбуке">
                                         <svg width="7" height="15">
-                                <use xlink:href="#fb"></use>
-                            </svg>
+                                            <use xlink:href="#fb"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--tw">
                                     <a href="#" aria-label="Мы в Твиттере">
                                         <svg width="21" height="14">
-                                <use xlink:href="#tw"></use>
-                            </svg>
+                                            <use xlink:href="#tw"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--vk">
                                     <a href="#" aria-label="Мы в Вконтакте">
                                         <svg width="22" height="12">
-                                <use xlink:href="#vk"></use>
-                            </svg>
+                                            <use xlink:href="#vk"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -455,22 +455,22 @@
                                 <li class="social__item social__item--fb">
                                     <a href="#" aria-label="Мы в Фейсбуке">
                                         <svg width="7" height="15">
-                                <use xlink:href="#fb"></use>
-                            </svg>
+                                            <use xlink:href="#fb"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--tw">
                                     <a href="#" aria-label="Мы в Твиттере">
                                         <svg width="21" height="14">
-                                <use xlink:href="#tw"></use>
-                            </svg>
+                                            <use xlink:href="#tw"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--vk">
                                     <a href="#" aria-label="Мы в Вконтакте">
                                         <svg width="22" height="12">
-                                <use xlink:href="#vk"></use>
-                            </svg>
+                                            <use xlink:href="#vk"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -581,15 +581,15 @@
                                 <li class="social__item social__item--tw">
                                     <a href="#" aria-label="Мы в Твиттере">
                                         <svg width="21" height="14">
-                                <use xlink:href="#tw"></use>
-                            </svg>
+                                            <use xlink:href="#tw"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--vk">
                                     <a href="#" aria-label="Мы в Вконтакте">
                                         <svg width="22" height="12">
-                                <use xlink:href="#vk"></use>
-                            </svg>
+                                            <use xlink:href="#vk"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -604,15 +604,15 @@
                                 <li class="social__item social__item--tw">
                                     <a href="#" aria-label="Мы в Твиттере">
                                         <svg width="21" height="14">
-                                <use xlink:href="#tw"></use>
-                            </svg>
+                                            <use xlink:href="#tw"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--vk">
                                     <a href="#" aria-label="Мы в Вконтакте">
                                         <svg width="22" height="12">
-                                <use xlink:href="#vk"></use>
-                            </svg>
+                                            <use xlink:href="#vk"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -627,15 +627,15 @@
                                 <li class="social__item social__item--tw">
                                     <a href="#" aria-label="Мы в Твиттере">
                                         <svg width="21" height="14">
-                                <use xlink:href="#tw"></use>
-                            </svg>
+                                            <use xlink:href="#tw"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social__item social__item--vk">
                                     <a href="#" aria-label="Мы в Вконтакте">
                                         <svg width="22" height="12">
-                                <use xlink:href="#vk"></use>
-                            </svg>
+                                            <use xlink:href="#vk"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -664,22 +664,22 @@
                     <li class="social__item social__item--fb">
                         <a href="#" aria-label="Мы в Фейсбуке">
                             <svg width="7" height="15">
-                        <use xlink:href="#fb"></use>
-                    </svg>
+                                <use xlink:href="#fb"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="social__item social__item--tw">
                         <a href="#" aria-label="Мы в Твиттере">
                             <svg width="21" height="14">
-                        <use xlink:href="#tw"></use>
-                    </svg>
+                                <use xlink:href="#tw"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="social__item social__item--vk">
                         <a href="#" aria-label="Мы в Вконтакте">
                             <svg width="22" height="12">
-                        <use xlink:href="#vk"></use>
-                    </svg>
+                                <use xlink:href="#vk"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>
@@ -720,11 +720,10 @@
             </form>
             <button class="modal-close" type="button">Закрыть</button>
         </div>
-        <div class="overflow"></div>
     </section>
-
+    <div class="overlay overlay-modal"></div>
     <!-- SCRIPTS -->
-  <!--  <script async src="//pixel-perfect.org/service/script.js?guid=d2f8cc5a54b054d43bd351b82acc4f33"></script>-->
+    <!--  <script async src="//pixel-perfect.org/service/script.js?guid=d2f8cc5a54b054d43bd351b82acc4f33"></script>-->
 
 </body>
 

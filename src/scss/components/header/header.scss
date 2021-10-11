@@ -113,7 +113,7 @@
 
 .header__social {
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
     left: -135px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -124,6 +124,10 @@
     align-items: center;
 }
 
+.header__social-item {
+    margin: 7px 0;
+}
+
 .header__social::after {
     position: absolute;
     content: '';
@@ -132,10 +136,6 @@
     width: 1px;
     height: 77px;
     background-color: $white;
-}
-
-.header__social-item {
-    margin: 7px 0;
 }
 
 .header__social-item--fb {
@@ -160,4 +160,69 @@
 
 .header__social-svg {
     fill: $white;
+}
+
+@media (max-width:1365px) and (min-width:768px) {
+    .header__nav {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 42px auto 85px 0;
+    }
+    .header__submenu {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        .header_item:nth-last-child(-n+2) {
+            margin-left: 35px;
+        }
+    }
+    .header__logo {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: 20px;
+        z-index: 1;
+    }
+    .header__cat {
+        left: 44%;
+        bottom: -25px;
+        height: 533px;
+    }
+    .header__wrapper {
+        height: 595px;
+    }
+    .header__social {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        bottom: 40px;
+        left: -11px;
+    }
+    .header__social::after {
+        display: none;
+    }
+    .header__social-item--fb {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-left: 12px;
+    }
+    .header__social-item--vk {
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    .header__social-item+.header__social-item {
+        margin-left: 0;
+    }
 }

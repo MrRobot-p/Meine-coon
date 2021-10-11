@@ -80,3 +80,46 @@
     background: $dark-gray url(../img/icons/arrow.svg) no-repeat 50% 50%;
     border-left: 0.5px solid $light-gold;
 }
+
+@media (max-width:1365px) and (min-width:768px) {
+    .care {
+        height: 1018px;
+        padding: 80px 100px 90px;
+    }
+    .care__title {
+        margin-bottom: 35px;
+    }
+    .care__list {
+        margin: 0 auto;
+        max-width: 560px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .care {
+        height: 966px;
+        padding: 50px 15px 30px;
+    }
+    .care__title {
+        margin-bottom: 35px;
+        font-size: 28px;
+    }
+    .care__list {
+        margin: 0 auto;
+        max-width: 560px;
+    }
+    .care__item {
+        margin-bottom: 30px;
+        padding: 20px 60px 20px 20px;
+    }
+    .care__subtitle {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .care__descr {
+        line-height: 20px;
+    }
+    .care__button {
+        width: 45px;
+    }
+}

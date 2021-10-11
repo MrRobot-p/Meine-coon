@@ -23,27 +23,6 @@
     line-height: 24px;
 }
 
-.answers__item {
-    position: relative;
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-}
-
-.answers__item:not(:last-child) {
-    margin-bottom: 38px;
-}
-
-.answers__item:before {
-    position: absolute;
-    content: "0" counter(num);
-    counter-increment: num;
-    font-weight: 700;
-    color: $light-gold;
-    top: 50px;
-    left: -110px;
-    font-size: 70px;
-}
-
 .answers__item.active .answers__answer {
     display: block;
 }
@@ -118,7 +97,7 @@
 }
 
 .answer__button {
-    margin: 35px 153px 0 auto;
+    margin: 35px auto;
 }
 
 .answers__button::before,
@@ -175,5 +154,97 @@
         display: block;
         -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@media (min-width:768px) {
+    .answers__item {
+        position: relative;
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    .answers__item:not(:last-child) {
+        margin-bottom: 38px;
+    }
+    .answers__item:before {
+        position: absolute;
+        content: "0" counter(num);
+        counter-increment: num;
+        font-weight: 700;
+        color: $light-gold;
+        top: 50px;
+        left: -110px;
+        font-size: 70px;
+    }
+}
+
+@media (max-width:1365px) and (min-width:768px) {
+    .answers__list {
+        width: 553px;
+    }
+    .answers {
+        padding: 135px 55px 125px 105px;
+    }
+    .answers__item {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    .answers__item:before {
+        top: 28px;
+        left: -80px;
+        font-size: 50px;
+    }
+    .answers__item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    .answers__question {
+        min-height: 77px;
+        padding: 14px 140px 14px 30px;
+    }
+    .answer__button {
+        margin: 35px auto;
+    }
+    .answers__button {
+        width: 73px;
+    }
+    .answers__answer {
+        padding: 10px 140px 10px 30px;
+    }
+}
+
+@media (max-width:767px) and (min-width: 320px) {
+    .answers {
+        padding: 60px 15px 60px 15px;
+    }
+    .answers__list {
+        width: 290px;
+    }
+    .answers__title {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .answers__subtitle {
+        margin-bottom: 40px;
+        max-width: 180px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    .answers__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .answers__question {
+        padding: 8px 50px 8px 15px;
+        min-height: 60px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .answers__answer {
+        padding: 10px 25px 10px 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .answers__button {
+        width: 43px;
     }
 }

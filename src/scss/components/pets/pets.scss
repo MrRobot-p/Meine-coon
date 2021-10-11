@@ -8,7 +8,6 @@
 }
 
 .pets__title {
-    margin-top: 220px;
     margin-bottom: 23px;
 }
 
@@ -88,4 +87,76 @@
 
 .pets__arrow {
     display: none;
+}
+
+@media (max-width:1365px) and (min-width:768px) {
+    .pets {
+        width: 720px;
+        margin-top: 108px;
+        margin-bottom: 80px;
+    }
+    .pets__slider {
+        position: relative;
+        margin-bottom: 56px;
+    }
+    .pets__photo--wrapper {
+        position: relative;
+        height: 485px;
+        width: 603px;
+        margin: 0 30px;
+    }
+    .pets__photo--inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 485px;
+        width: 100%;
+    }
+    .pets__photo {
+        position: absolute;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .pets__photo--left,
+    .pets__photo--right {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        z-index: 0;
+    }
+    .pets__photo--left {
+        -webkit-transform-origin: 0 center;
+        transform-origin: 0 center;
+        left: 0;
+    }
+    .pets__photo--right {
+        -webkit-transform-origin: 100% center;
+        transform-origin: 100% center;
+        right: 0;
+    }
+    .pets__photo--center {
+        z-index: 1;
+    }
+    .pets__arrow {
+        position: absolute;
+        display: block;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .pets__arrow--left {
+        left: 0px;
+    }
+    .pets__arrow--right {
+        right: 0px;
+    }
 }

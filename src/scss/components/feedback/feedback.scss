@@ -59,6 +59,7 @@
     font-size: 14px;
     line-height: 23px;
     opacity: 0.72;
+    text-align: center;
 }
 
 .feedback__photo-wrapper {
@@ -128,5 +129,97 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1365px) and (min-width: 768px) {
+    .feedback__block {
+        width: 578px;
+        padding: 150px 80px 43px;
+    }
+    .feedback__descr {
+        width: 400px;
+    }
+    .feedback__button {
+        top: 40px;
+        width: 59px;
+        height: 16px;
+    }
+    .feedback__button--left {
+        left: 50px;
+        background-image: url(../img/icons/recall-left.svg);
+    }
+    .feedback__button--right {
+        right: 50px;
+        background-image: url(../img/icons/recall-right.svg);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1366px) {
+    .feedback__title {
+        margin-bottom: 145px;
+    }
+    .feedback__block {
+        text-align: center;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .feedback__down {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .feedback__photo-wrapper {
+        left: 50%;
+        top: -95px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 302px;
+    }
+    .feedback__photo {
+        width: 302px;
+    }
+    .feedback__button {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .feedback {
+        margin-bottom: 60px;
+    }
+    .feedback__title {
+        font-size: 28px;
+    }
+    .feedback__name {
+        font-size: 18px;
+    }
+    .feedback__block {
+        width: 90%;
+        padding: 115px 7% 43px;
+    }
+    .feedback__photo-wrapper {
+        top: -83px;
+        width: 242px;
+    }
+    .feedback__photo {
+        width: 242px;
+    }
+    .feedback__descr {
+        width: 228px;
+    }
+    .feedback__date {
+        font-size: 12px;
+        margin-right: 24px;
+    }
+    .feedback__button {
+        top: -7px;
+    }
+    .feedback__button--left {
+        left: calc(50% - 145px);
+    }
+    .feedback__button--right {
+        left: calc(50% + 135px);
     }
 }

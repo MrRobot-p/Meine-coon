@@ -11,6 +11,7 @@ var escKeyCode = 27;
 var write_btn = document.querySelector(".contacts-button");
 var write_popap = document.querySelector(".modal-write");
 var write_close = write_popap.querySelector(".modal-close");
+var overlay = document.querySelector(".overlay-modal");
 var form = write_popap.querySelector("form");
 var user_name = form.querySelector("input[type=text]");
 var user_mail = form.querySelector("input[type=email]");
@@ -27,6 +28,7 @@ try {
 write_btn.addEventListener("click", function(evt) {
     evt.preventDefault();
     write_popap.classList.add("modal-show");
+    overlay.classList.add('active');
     if (storage) {
         user_name.value = storage;
         user_mail.focus();
@@ -50,6 +52,7 @@ write_close.addEventListener("click", function(evt) {
     evt.preventDefault();
     write_popap.classList.remove("modal-show");
     write_popap.classList.remove("modal-error");
+    overlay.classList.remove('active');
 });
 
 
@@ -61,9 +64,16 @@ window.addEventListener("keydown", function(evt) {
         if (write_popap.classList.contains("modal-show")) {
             write_popap.classList.remove("modal-show");
             write_popap.classList.remove("modal-error");
+            overlay.classList.remove('active');
         }
         if (map_popap.classList.contains("modal-show")) {
             map_popap.classList.remove("modal-show");
+            overlay.classList.remove('active');
         }
     }
+});
+
+overlay.addEventListener('click', function() {
+    document.querySelector('.modal.modal-show').classList.remove('modal-show');
+    this.classList.remove('active');
 });

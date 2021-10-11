@@ -113,3 +113,106 @@
         opacity: 1;
     }
 }
+
+@media (max-width:1365px) and (min-width:768px) {
+    .team {
+        padding: 80px 50px 195px;
+    }
+    .team__block {
+        width: 600px;
+        left: 0;
+    }
+    .team__photo-wrapper {
+        width: 208px;
+        height: 205px;
+        left: 320px;
+        top: 275px;
+    }
+    .team__photo {
+        width: 208px;
+    }
+    .team__button {
+        position: absolute;
+        top: 470px;
+    }
+    .team__button--left {
+        left: 290px;
+    }
+    .team__button--right {
+        right: -10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .team {
+        padding: 60px 15px;
+    }
+    .team__title {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .team__subtitle {
+        width: 252px;
+        margin: 25px auto;
+        margin-bottom: 100px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    .team__photo-wrapper {
+        width: 126px;
+        height: 125px;
+        top: -63px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .team__photo {
+        width: 126px;
+        height: 125px;
+    }
+    .team__block {
+        width: 290px;
+        border: 0px solid $dark-gray;
+        outline: 0px solid $dark-gold;
+        padding: 85px 10px 15px;
+        text-align: center;
+        left: 0;
+    }
+    .team__name {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    .team__post {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .team__descr {
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 20px;
+        width: 268px;
+    }
+    .team__social {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .team__button {
+        top: -12px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .team__button--left {
+        left: calc(50% - 90px);
+    }
+    .team__button--right {
+        left: calc(50% + 90px);
+    }
+}
+
+@media (max-width:335px) {
+    .team__block {
+        left: -16px;
+    }
+}

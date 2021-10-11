@@ -81,3 +81,28 @@
 .about__icon {
     margin-bottom: 35px;
 }
+
+@media (max-width:1365px) and (min-width:768px) {
+    .about {
+        padding: 80px 30px 65px;
+    }
+    .about__title {
+        margin-bottom: 23px;
+    }
+    .about__subtitle {
+        margin-bottom: 58px;
+    }
+    .about__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .about__item:not(:last-child) {
+        margin-right: 0px;
+    }
+}
