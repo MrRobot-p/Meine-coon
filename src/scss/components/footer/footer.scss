@@ -5,30 +5,45 @@
 .footer__wrapper {
     width: 850px;
     padding: 70px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+    @media (max-width: 1365px) {
+        width: 770px;
+        padding: 39px 20px;
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px 20px 20px;
+        width: 320px;
+    }
 }
 
 .footer__contacts {
     width: 670px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
+    @media (max-width: 1365px) {
+        margin: 0 auto;
+        width: 670px;
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        max-width: 280px;
+    }
 }
 
 .footer__social {
     text-align: center;
+    @media (max-width: 767px) {
+        order: 3;
+    }
+}
+
+.footer__social-item:not(:first-child) {
+    margin-left: 10px;
 }
 
 .footer__social svg {
@@ -39,34 +54,64 @@
 }
 
 .footer__address {
-    width: 350px;
     margin-left: 20px;
     color: $white;
     font-size: 14px;
+    @media (max-width: 1365px) {
+        width: 264px;
+    }
+    @media (max-width: 767px) {
+        margin: 0 auto;
+        order: 1;
+        margin-bottom: 15px;
+    }
 }
 
-.footer__tel a {
+.footer__address-link {
     color: $white;
-    font-size: 14px;
-    font-weight: 700;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
 }
 
-.footer__tel a:hover,
-.footer__tel a:focus {
+.footer__address-link:hover,
+.footer__address-link:focus {
     opacity: 0.5;
     outline: none;
 }
 
-.footer__tel a:active {
+.footer__address-link:active {
+    opacity: 0.2;
+}
+
+.footer__tel-link {
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+    @media (max-width: 767px) {
+        font-weight: 400;
+    }
+}
+
+.footer__tel-link:hover,
+.footer__tel-link:focus {
+    opacity: 0.5;
+    outline: none;
+}
+
+.footer__tel-link:active {
     opacity: 0.2;
 }
 
 .footer__logo {
     margin-right: 120px;
-    -ms-flex-item-align: start;
     align-self: flex-start;
+    @media (max-width: 1365px) {
+        display: none;
+    }
+    @media (max-width: 767px) {
+        display: block;
+        margin: 0 auto;
+        order: 1;
+    }
 }
 
 .footer__logo-svg {
@@ -76,68 +121,9 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1365px) {
-    .footer__wrapper {
-        width: 770px;
-        padding: 39px 20px;
-    }
-    .footer__contacts {
-        margin: 0 auto;
-        width: 670px;
-    }
-    .footer__address {
-        width: 264px;
-    }
-    .footer__logo {
-        display: none;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-    .footer__wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 40px 20px;
-        width: 320px;
-    }
-    .footer__contacts {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .footer__address {
-        margin: 0 auto;
-        text-align: center;
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-        margin-bottom: 15px;
-        width: 320px;
-    }
+@media (max-width: 767px) {
     .footer__tel {
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
         order: 2;
         margin-bottom: 20px;
-    }
-    .footer__tel a {
-        font-weight: 400;
-    }
-    .footer__social {
-        -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-        order: 3;
-    }
-    .footer__logo {
-        margin: 0 auto;
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
     }
 }

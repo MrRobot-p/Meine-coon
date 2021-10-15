@@ -1,9 +1,19 @@
 .answers {
-    padding: 75px 40px 80px;
+    padding: 75px 0px 80px;
+    @media (max-width: 1365px) {
+        padding: 135px 0px 125px 0px;
+    }
+    @media (max-width:767px) {
+        padding: 60px 0px 60px 0px;
+    }
 }
 
 .answers__title {
     margin-bottom: 20px;
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
 }
 
 .answers__subtitle {
@@ -11,16 +21,30 @@
     margin-bottom: 50px;
     max-width: 500px;
     text-align: center;
+    color: $light-gold;
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+        max-width: 180px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+    }
 }
 
 .answers__list {
     width: 800px;
     list-style: none;
     counter-reset: num;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
     color: $white;
     line-height: 24px;
+    @media (max-width: 1365px) {
+        width: 553px;
+    }
+    @media (max-width:767px) {
+        width: 290px;
+    }
 }
 
 .answers__item.active .answers__answer {
@@ -28,9 +52,7 @@
 }
 
 .answers__item.active .answers__answer-wrap {
-    -webkit-animation-name: answer;
     animation-name: answer;
-    -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
 }
 
@@ -57,14 +79,20 @@
     position: relative;
     border: 0.5px solid $light-gold;
     font-weight: 500;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
     padding: 25px 150px 25px 42px;
+    @media (max-width: 1365px) {
+        min-height: 77px;
+        padding: 14px 140px 14px 30px;
+    }
+    @media (max-width:767px) {
+        padding: 8px 50px 8px 15px;
+        min-height: 60px;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 .answers__question:hover .answers__button,
@@ -92,12 +120,20 @@
     width: 104px;
     border-left: 0.5px solid $light-gold;
     cursor: pointer;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
+    @media (max-width: 1365px) {
+        width: 73px;
+    }
+    @media (max-width:767px) {
+        width: 43px;
+    }
 }
 
 .answer__button {
-    margin: 35px auto;
+    margin: 35px 190px 35px auto;
+    @media (max-width: 1365px) {
+        margin: 35px auto;
+    }
 }
 
 .answers__button::before,
@@ -106,7 +142,6 @@
     content: "";
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: $light-gold;
 }
@@ -129,17 +164,23 @@
     border-right: 0.5px solid $light-gold;
     border-bottom: 0.5px solid $light-gold;
     font-weight: 300;
+    @media (max-width: 1365px) {
+        padding: 10px 140px 10px 30px;
+    }
+    @media (max-width:767px) {
+        padding: 10px 25px 10px 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 @-webkit-keyframes answer {
     0% {
         display: none;
-        -webkit-transform: translateY(-200%);
         transform: translateY(-200%);
     }
     100% {
         display: block;
-        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 }
@@ -147,12 +188,10 @@
 @keyframes answer {
     0% {
         display: none;
-        -webkit-transform: translateY(-200%);
         transform: translateY(-200%);
     }
     100% {
         display: block;
-        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 }
@@ -160,7 +199,6 @@
 @media (min-width:768px) {
     .answers__item {
         position: relative;
-        -webkit-transform: translateX(50px);
         transform: translateX(50px);
     }
     .answers__item:not(:last-child) {
@@ -178,17 +216,7 @@
     }
 }
 
-@media (max-width:1365px) and (min-width:768px) {
-    .answers__list {
-        width: 553px;
-    }
-    .answers {
-        padding: 135px 55px 125px 105px;
-    }
-    .answers__item {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
-    }
+@media (max-width:1365px) {
     .answers__item:before {
         top: 28px;
         left: -80px;
@@ -197,54 +225,10 @@
     .answers__item:not(:last-child) {
         margin-bottom: 25px;
     }
-    .answers__question {
-        min-height: 77px;
-        padding: 14px 140px 14px 30px;
-    }
-    .answer__button {
-        margin: 35px auto;
-    }
-    .answers__button {
-        width: 73px;
-    }
-    .answers__answer {
-        padding: 10px 140px 10px 30px;
-    }
 }
 
-@media (max-width:767px) and (min-width: 320px) {
-    .answers {
-        padding: 60px 15px 60px 15px;
-    }
-    .answers__list {
-        width: 290px;
-    }
-    .answers__title {
-        margin-bottom: 30px;
-        font-size: 28px;
-    }
-    .answers__subtitle {
-        margin-bottom: 40px;
-        max-width: 180px;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 300;
-    }
+@media (max-width:767px) {
     .answers__item:not(:last-child) {
         margin-bottom: 30px;
-    }
-    .answers__question {
-        padding: 8px 50px 8px 15px;
-        min-height: 60px;
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .answers__answer {
-        padding: 10px 25px 10px 15px;
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .answers__button {
-        width: 43px;
     }
 }

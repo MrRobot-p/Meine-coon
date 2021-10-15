@@ -1,14 +1,24 @@
 .pets {
     position: relative;
-    width: 1100px;
+    max-width: 1100px;
     margin-top: 220px;
     margin-bottom: 80px;
     text-align: center;
-    margin: 0 auto;
+    margin: 220px auto 0 auto;
+    @media (max-width: 1365px) {
+        max-width: 720px;
+        margin: 108px auto 80px auto;
+    }
+    @media (max-width:767px) {
+        margin: 60px auto;
+    }
 }
 
 .pets__title {
     margin-bottom: 23px;
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
 }
 
 .pets__descr {
@@ -18,14 +28,14 @@
     font-weight: 300;
     line-height: 26px;
     color: $light-gold;
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 .pets__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -34,11 +44,11 @@
     padding: 0;
 }
 
-.pets__item+.pets__item {
+.pets__item:not(:first-child) {
     margin-left: 40px;
 }
 
-.pets__item button {
+.pets__items-btn {
     background-color: transparent;
     border: none;
     outline: none;
@@ -48,18 +58,19 @@
     font-weight: 500;
     opacity: 0.2;
     cursor: pointer;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
 }
 
-.pets__item button:hover,
-.pets__item button:focus {
+.pets__items-btn:hover,
+.pets__items-btn:focus {
     opacity: 1;
 }
 
-.pets__item button:active {
+.pets__items-btn:active {
     opacity: 0.5;
-    -webkit-transition: 0s;
     transition: 0s;
 }
 
@@ -78,6 +89,18 @@
     grid-row-gap: 30px;
     grid-column-gap: 35px;
     margin-bottom: 55px;
+    @media (max-width: 1365px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: calc(485px/2);
+        width: 100%;
+    }
+    @media (max-width:767px) {
+        transition: .3s;
+        padding: calc(485px/2/2);
+    }
 }
 
 .pets__photo--inner:nth-child(2) {
@@ -87,76 +110,62 @@
 
 .pets__arrow {
     display: none;
+    @media (max-width: 1365px) {
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
-@media (max-width:1365px) and (min-width:768px) {
-    .pets {
-        width: 720px;
-        margin-top: 108px;
-        margin-bottom: 80px;
-    }
+@media (max-width:1365px) {
     .pets__slider {
+        display: flex;
         position: relative;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 56px;
     }
     .pets__photo--wrapper {
         position: relative;
-        height: 485px;
         width: 603px;
         margin: 0 30px;
     }
-    .pets__photo--inner {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        height: 485px;
-        width: 100%;
-    }
     .pets__photo {
         position: absolute;
-        -webkit-transition: all .3s;
         transition: all .3s;
     }
     .pets__photo--left,
     .pets__photo--right {
-        -webkit-transform: scale(0.7);
         transform: scale(0.7);
         z-index: 0;
     }
     .pets__photo--left {
-        -webkit-transform-origin: 0 center;
         transform-origin: 0 center;
         left: 0;
     }
     .pets__photo--right {
-        -webkit-transform-origin: 100% center;
         transform-origin: 100% center;
         right: 0;
     }
     .pets__photo--center {
         z-index: 1;
     }
-    .pets__arrow {
-        position: absolute;
-        display: block;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
     .pets__arrow--left {
         left: 0px;
     }
     .pets__arrow--right {
         right: 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .pets__photo--wrapper {
+        margin: 0 20px;
+        overflow: hidden;
+        width: 246px;
+    }
+    .pets__slider {
+        margin-bottom: 0;
     }
 }
