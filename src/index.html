@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Питомник Мейн-Кунов</title>
     <link rel="stylesheet" href="#">
-    <link rel="preload" href="../fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="../fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="../fonts/Robotolight.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="../fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="..//fonts/yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/Robotolight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
 <body>
@@ -233,12 +233,12 @@
                 <h2 class="title pets__title">Питомцы</h2>
                 <p class="pets__descr">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
                 <ul class="pets__list">
-                    <li class="pets__item active"><button class="pets__items-btn">Коты</button></li>
-                    <li class="pets__item"><button class="pets__items-btn">Кошки</button></li>
-                    <li class="pets__item"><button class="pets__items-btn">Котята</button></li>
+                    <li class="pets__item active"><button type="button" class="pets__items-btn">Коты</button></li>
+                    <li class="pets__item"><button type="button" class="pets__items-btn">Кошки</button></li>
+                    <li class="pets__item"><button type="button" class="pets__items-btn">Котята</button></li>
                 </ul>
                 <div class="pets__slider">
-                    <button class="pets__arrow pets__arrow--left button__arrow button__arrow--left" aria-label="Листать влево"></button>
+                    <button class="pets__arrow pets__arrow--left button__arrow button__arrow--left" type="button" aria-label="Листать влево"></button>
                     <div class="pets__photo--wrapper">
                         <div class="pets__photo--inner">
                             <img class="pets__photo pets__photo--left" src="img/cat1.jpg" srcset="img/cat1@2x.jpg 2x" alt="Белый окрас" width="517" height="214">
@@ -246,7 +246,7 @@
                             <img class="pets__photo pets__photo--right" src="img/cat2.jpg" srcset="img/cat2@2x.jpg 2x" alt="Белый окрас" width="517" height="214">
                         </div>
                     </div>
-                    <button class="pets__arrow pets__arrow--right button__arrow button__arrow--right" aria-label="Листать вправо"></button>
+                    <button type="button" class="pets__arrow pets__arrow--right button__arrow button__arrow--right" aria-label="Листать вправо"></button>
                 </div>
                 <a class="pets__button button" href="#">Смотреть больше</a>
             </div>
@@ -390,7 +390,7 @@
                                     </a>
                                 </li>
                                 <li class="team__social-item social__item social__item--tw">
-                                    <a href="#" aria-label="Мы в Твиттере">
+                                    <a class="team_social-link" href="#" aria-label="Мы в Твиттере">
                                         <svg width="21" height="14">
                                             <use xlink:href="#tw"></use>
                                         </svg>
@@ -462,8 +462,8 @@
                             </ul>
                         </div>
                     </div>
-                    <button class="team__button team__button--left button__arrow button__arrow--left" aria-label="Листать влево"></button>
-                    <button class="team__button team__button--right button__arrow button__arrow--right" aria-label="Листать вправо"></button>
+                    <button type="button" class="team__button team__button--left button__arrow button__arrow--left" aria-label="Листать влево"></button>
+                    <button type="button" class="team__button team__button--right button__arrow button__arrow--right" aria-label="Листать вправо"></button>
                 </div>
             </div>
         </section>
@@ -476,10 +476,9 @@
                 <p class="answers__subtitle">Мы ответим на самые популярные ваши вопросы</p>
                 <ol class="answers__list">
                     <li class="answers__item active">
-                        <div class="answers__question">
-                            <p class="answers__text">С какого возраста можно забирать котенка из питомника?</p>
-                            <button class="answers__button" aria-label="Посмотреть ответ 1"></button>
-                        </div>
+                        <button class="answers__question answers__question-text" type="button" aria-label="Посмотреть ответ 1"> С какого возраста можно забирать котенка из питомника?
+                            <span class="answers__button"></span>
+                        </button>
                         <div class="answers__answer">
                             <div class="answers__answer-wrap">
                                 <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий
@@ -490,10 +489,9 @@
                         </div>
                     </li>
                     <li class="answers__item">
-                        <div class="answers__question">
-                            <p class="answers__text">Как зарезервировать котенка?</p>
-                            <button class="answers__button" aria-label="Посмотреть ответ 2"></button>
-                        </div>
+                        <button class="answers__question answers__question-text" type="button" aria-label="Посмотреть ответ 2">Как зарезервировать котенка?
+                            <span class="answers__button"></span>
+                        </button>
                         <div class="answers__answer">
                             <div class="answers__answer-wrap">
                                 <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий
@@ -504,10 +502,9 @@
                         </div>
                     </li>
                     <li class="answers__item">
-                        <div class="answers__question">
-                            <p class="answers__text">Можно ли купить кота, если я живу в другом городе?</p>
-                            <button class="answers__button" aria-label="Посмотреть ответ 3"></button>
-                        </div>
+                        <button class="answers__question answers__question-text" type="button" aria-label="Посмотреть ответ 3"> Можно ли купить кота, если я живу в другом городе?
+                            <span class="answers__button" ></span>
+                        </button>
                         <div class="answers__answer">
                             <div class="answers__answer-wrap">
                                 <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий
@@ -518,10 +515,9 @@
                         </div>
                     </li>
                     <li class="answers__item">
-                        <div class="answers__question">
-                            <p class="answers__text">Как подготовить дом к приему нового питомца? </p>
-                            <button class="answers__button" aria-label="Посмотреть ответ 4"></button>
-                        </div>
+                        <button class="answers__question answers__question-text" type="button" aria-label="Посмотреть ответ 4"> Как подготовить дом к приему нового питомца?
+                            <span class="answers__button" ></span>
+                        </button>
                         <div class="answers__answer">
                             <div class="answers__answer-wrap">
                                 <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий
@@ -627,8 +623,8 @@
                             </ul>
                         </div>
                     </div>
-                    <button class="feedback__button feedback__button--left button__arrow button__arrow--left" aria-label="Листать влево"></button>
-                    <button class="feedback__button feedback__button--right button__arrow button__arrow--right" aria-label="Листать вправо"></button>
+                    <button type="button" class="feedback__button feedback__button--left button__arrow button__arrow--left" aria-label="Листать влево"></button>
+                    <button type="button" class="feedback__button feedback__button--right button__arrow button__arrow--right" aria-label="Листать вправо"></button>
                 </div>
             </div>
         </section>
