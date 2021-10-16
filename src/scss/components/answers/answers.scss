@@ -76,13 +76,15 @@
 }
 
 .answers__question {
+    width: 100%;
+    background-color: transparent;
     position: relative;
     border: 0.5px solid $light-gold;
     font-weight: 500;
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 25px 150px 25px 42px;
+    padding: 35px 150px 35px 42px;
     @media (max-width: 1365px) {
         min-height: 77px;
         padding: 14px 140px 14px 30px;
@@ -93,6 +95,12 @@
         font-size: 14px;
         line-height: 20px;
     }
+}
+
+.answers__question-text {
+    color: $white;
+    text-align: start;
+    line-height: 20px;
 }
 
 .answers__question:hover .answers__button,
@@ -174,17 +182,6 @@
     }
 }
 
-@-webkit-keyframes answer {
-    0% {
-        display: none;
-        transform: translateY(-200%);
-    }
-    100% {
-        display: block;
-        transform: translateY(0);
-    }
-}
-
 @keyframes answer {
     0% {
         display: none;
@@ -210,7 +207,7 @@
         counter-increment: num;
         font-weight: 700;
         color: $light-gold;
-        top: 50px;
+        top: 25px;
         left: -110px;
         font-size: 70px;
     }

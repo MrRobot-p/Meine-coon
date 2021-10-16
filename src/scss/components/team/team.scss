@@ -59,7 +59,6 @@
 
 .team__block-content {
     display: none;
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     opacity: 0;
 }
@@ -67,11 +66,8 @@
 .team__block-content--active {
     display: block;
     opacity: 1;
-    -webkit-animation-name: fade;
     animation-name: fade;
-    -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
-    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 
@@ -122,12 +118,8 @@
 }
 
 .team__photo-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
-    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -135,9 +127,16 @@
     margin-left: 10px;
 }
 
+.team_social-link:focus {
+    opacity: 0.5;
+}
+
 .team__social svg {
     fill: $white;
     &:hover {
+        fill: $light-gold;
+    }
+    &:focus {
         fill: $light-gold;
     }
 }
@@ -154,7 +153,6 @@
 .team__button {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     @media (max-width: 1365px) {
         position: absolute;

@@ -73,7 +73,6 @@
 
 .header__link {
     color: $white;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     opacity: 0.5;
     outline: none;
@@ -203,6 +202,10 @@
     opacity: 0.5;
 }
 
+.header__social-link:focus {
+    opacity: 0.5;
+}
+
 .header__social-svg {
     fill: $white;
 }
@@ -288,8 +291,8 @@
 }
 
 .header__cross-layer {
+    width: 26px;
     height: 2px;
-    width: 100%;
     position: absolute;
     background: $light-gold;
     margin: 0 auto;

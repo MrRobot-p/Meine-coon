@@ -11,8 +11,7 @@
     }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5),
-(min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
     .care {
         background-image: url(../img/bgCat@2x.jpg);
     }
