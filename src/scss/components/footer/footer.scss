@@ -3,11 +3,11 @@
 }
 
 .footer__wrapper {
-    width: 850px;
-    padding: 70px 0;
     display: flex;
-    margin: 0 auto;
     align-items: center;
+    width: 850px;
+    margin: 0 auto;
+    padding: 70px 0;
     @media (max-width: 1365px) {
         width: 770px;
         padding: 39px 20px;
@@ -21,10 +21,10 @@
 }
 
 .footer__contacts {
-    width: 670px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 670px;
     @media (max-width: 1365px) {
         margin: 0 auto;
         width: 670px;

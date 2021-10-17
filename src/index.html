@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Питомник Мейн-Кунов</title>
-    <link rel="preload" href="fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="fonts/Robotolight.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="fonts/yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Robotolight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
 <body>
@@ -168,7 +168,7 @@
                 <nav class="header__nav">
                     <ul class="header__menu">
                         <li class="header__item">
-                            <a class="header__link" href="#">Главная</a>
+                            <a class="header__link header__link--active" href="#">Главная</a>
                         </li>
                         <li class="header__item">
                             <a class="header__link" href="#">Питомник</a>
@@ -180,8 +180,8 @@
                 </nav>
                 <div class="header__text">
                     <p class="header__city">Новосибирск</p>
-                    <h1 class="header__title">Питомник Мейн-Кунов</h1>
-                    <p class="header__subtitle">Первый питомник с расширенным спектром услуг</p>
+                    <h1 class="header__title title">Питомник Мейн-Кунов</h1>
+                    <p class="header__subtitle describe">Первый питомник с расширенным спектром услуг</p>
                     <a href="#" class="header__btn button">Смотреть котиков</a>
                 </div>
                 <ul class="header__social">
@@ -230,7 +230,7 @@
         <section class="pets">
             <div class="container">
                 <h2 class="title pets__title">Питомцы</h2>
-                <p class="pets__descr">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+                <p class="pets__descr describe">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
                 <ul class="pets__list">
                     <li class="pets__item active"><button type="button" class="pets__items-btn">Коты</button></li>
                     <li class="pets__item"><button type="button" class="pets__items-btn">Кошки</button></li>
@@ -256,7 +256,7 @@
         <section class="features">
             <div class="container">
                 <h2 class="title features__title">Особенности породы</h2>
-                <p class="features__descr">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </p>
+                <p class="features__descr describe">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </p>
                 <div class="features__cat">
                     <picture>
                         <source type="image/webp" media="(max-width: 1365px)" srcset="img/FeatureCat-desktop@1x.webp 1x, img/FeatureCat-desktop@2x.webp 2x">
@@ -277,7 +277,7 @@
         <section class="about">
             <div class="container">
                 <h2 class="title about__title">Почему именно мы?</h2>
-                <p class="about__subtitle">Приобретая животное в нашем питомнике, вы получите</p>
+                <p class="about__subtitle describe">Приобретая животное в нашем питомнике, вы получите</p>
                 <ul class="about__list">
                     <li class="about__item">
                         <a class="about__item-link" href="#" aria-label="Подробнее о ветеринарном обслуживании">
@@ -357,7 +357,7 @@
         <section class="team">
             <div class="container">
                 <h2 class="team__title title">Наша команда</h2>
-                <p class="team__subtitle">Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</p>
+                <p class="team__subtitle describe">Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</p>
                 <div class="team__block">
                     <div class="team__block-inner">
                         <div class="team__photo-wrapper">
@@ -472,7 +472,7 @@
         <section class="answers">
             <div class="container">
                 <h2 class="answers__title title">Вопрос-Ответ</h2>
-                <p class="answers__subtitle">Мы ответим на самые популярные ваши вопросы</p>
+                <p class="answers__subtitle describe">Мы ответим на самые популярные ваши вопросы</p>
                 <ol class="answers__list">
                     <li class="answers__item active">
                         <button class="answers__question answers__question-text" type="button" aria-label="Посмотреть ответ 1"> С какого возраста можно забирать котенка из питомника?
@@ -693,8 +693,8 @@
                         <p class="modal__user-consent">
                             Нажимая на кнопку "Заказать звонок", я даю <a class="modal__personal" href="#">согласие на обработку персональных данных</a>
                         </p>
-                        <div class="modal-control">
-                            <button class="button writeus-button" type="submit">Заказать звонок</button>
+                        <div class="modal__control">
+                            <button class="button modal__control-button" type="submit">Заказать звонок</button>
                         </div>
                     </div>
                 </div>

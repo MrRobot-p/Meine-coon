@@ -1,6 +1,6 @@
 .features {
-    margin: 0 auto;
     max-width: 1100px;
+    margin: 0 auto;
     margin-bottom: 105px;
     @media (max-width: 1365px) {
         max-width: 710px;
@@ -23,12 +23,9 @@
 
 .features__descr {
     max-width: 740px;
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
-    font-weight: 300;
-    line-height: 26px;
-    text-align: center;
-    color: $light-gold;
     @media (max-width: 1365px) {
         width: 90%;
         margin-bottom: 40px;
@@ -71,11 +68,11 @@
 
 .features__text::before {
     position: absolute;
+    width: 15px;
+    height: 15px;
     content: "";
     background-color: $light-gold;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
     @media (max-width: 1365px) {
         width: 10px;
         height: 10px;
@@ -89,19 +86,19 @@
 }
 
 .features__text:nth-of-type(1) {
-    max-width: 210px;
     top: 184px;
     left: 6px;
+    max-width: 210px;
     @media (max-width: 1365px) {
-        max-width: 170px;
         top: 120px;
         left: -38px;
+        max-width: 170px;
     }
     @media (max-width: 767px) {
-        max-width: 250px;
-        width: 250px;
         top: 0px;
         left: 0px;
+        max-width: 250px;
+        width: 250px;
     }
 }
 

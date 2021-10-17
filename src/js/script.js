@@ -2,7 +2,7 @@ console.log('Start Project');
 
 const escKeyCode = 27;
 const WindowBreakpoints = {
-    TABLET: 768
+    TABLET: 767
 };
 const headerOpenedClass = 'header--menu-opened';
 const AnswerOpenedClass = 'answers--answer-opened';

@@ -17,26 +17,24 @@
 }
 
 .answers__subtitle {
+    text-align: center;
+    max-width: 500px;
     margin: 0 auto;
     margin-bottom: 50px;
-    max-width: 500px;
-    text-align: center;
-    color: $light-gold;
     @media (max-width: 767px) {
-        margin-bottom: 40px;
         max-width: 180px;
+        margin-bottom: 40px;
         font-size: 14px;
         line-height: 20px;
-        font-weight: 300;
     }
 }
 
 .answers__list {
     width: 800px;
-    list-style: none;
-    counter-reset: num;
     margin: 0 auto;
     padding: 0;
+    list-style: none;
+    counter-reset: num;
     color: $white;
     line-height: 24px;
     @media (max-width: 1365px) {
@@ -76,30 +74,28 @@
 }
 
 .answers__question {
-    width: 100%;
-    background-color: transparent;
-    position: relative;
-    border: 0.5px solid $light-gold;
-    font-weight: 500;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    position: relative;
+    width: 100%;
     padding: 35px 150px 35px 42px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 0.5px solid $light-gold;
+    cursor: pointer;
     @media (max-width: 1365px) {
-        min-height: 77px;
-        padding: 14px 140px 14px 30px;
+        padding: 28px 140px 28px 30px;
     }
     @media (max-width:767px) {
-        padding: 8px 50px 8px 15px;
-        min-height: 60px;
+        padding: 18px 50px 18px 15px;
         font-size: 14px;
         line-height: 20px;
     }
 }
 
 .answers__question-text {
-    color: $white;
     text-align: start;
+    color: $white;
     line-height: 20px;
 }
 
@@ -120,13 +116,13 @@
     top: 0;
     bottom: 0;
     right: 0;
+    width: 104px;
+    outline: none;
     background-color: transparent;
+    border-left: 0.5px solid $light-gold;
     border-top: none;
     border-right: none;
     border-bottom: none;
-    outline: none;
-    width: 104px;
-    border-left: 0.5px solid $light-gold;
     cursor: pointer;
     transition: 0.3s;
     @media (max-width: 1365px) {
@@ -165,13 +161,13 @@
 }
 
 .answers__answer {
+    display: none;
     padding: 30px 200px 40px 42px;
     overflow: hidden;
-    display: none;
+    font-weight: 300;
     border-left: 0.5px solid $light-gold;
     border-right: 0.5px solid $light-gold;
     border-bottom: 0.5px solid $light-gold;
-    font-weight: 300;
     @media (max-width: 1365px) {
         padding: 10px 140px 10px 30px;
     }
@@ -179,17 +175,6 @@
         padding: 10px 25px 10px 15px;
         font-size: 14px;
         line-height: 20px;
-    }
-}
-
-@keyframes answer {
-    0% {
-        display: none;
-        transform: translateY(-200%);
-    }
-    100% {
-        display: block;
-        transform: translateY(0);
     }
 }
 
@@ -203,13 +188,13 @@
     }
     .answers__item:before {
         position: absolute;
+        top: 25px;
+        left: -110px;
         content: "0" counter(num);
         counter-increment: num;
         font-weight: 700;
-        color: $light-gold;
-        top: 25px;
-        left: -110px;
         font-size: 70px;
+        color: $light-gold;
     }
 }
 

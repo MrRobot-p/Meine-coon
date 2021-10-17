@@ -66,12 +66,12 @@
 }
 
 .modal__title {
+    width: 234px;
+    margin: 34px auto 38px 40px;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 32px;
     color: $dark-gold;
-    width: 234px;
-    margin: 34px auto 38px 40px;
     @media (max-width: 1365px) {
         font-size: 18px;
         line-height: 25px;
@@ -98,7 +98,6 @@
 
 .modal__user-data {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     margin: 0 40px;
     @media (max-width: 1365px) {
@@ -155,7 +154,6 @@
 
 .modal__user-personal {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 40px 40px 40px;
@@ -179,12 +177,12 @@
     }
 }
 
-.modal-control {
+.modal__control {
     padding: 0;
     text-align: center;
 }
 
-.writeus-button {
+.modal__control-button {
     margin: 0;
     width: 260px;
     font-size: 14px;
@@ -193,26 +191,8 @@
     background-color: $light-gold;
 }
 
-.writeus-button:hover {
+.modal__control-button:hover {
     opacity: 0.8;
-}
-
-.overlay {
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $dark-gold;
-    z-index: 20;
-    transition: 0.3s all;
-}
-
-.overlay.active {
-    opacity: 0.5;
-    visibility: visible;
 }
 
 @media (max-width:1365px) {
