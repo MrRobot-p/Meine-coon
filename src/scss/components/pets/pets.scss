@@ -14,9 +14,6 @@
 
 .pets__title {
     margin-bottom: 23px;
-    @media (max-width: 767px) {
-        font-size: 28px;
-    }
 }
 
 .pets__descr {
@@ -24,10 +21,6 @@
     margin: 0 auto;
     margin-bottom: 40px;
     color: $light-gold;
-    @media (max-width: 767px) {
-        font-size: 14px;
-        line-height: 20px;
-    }
 }
 
 .pets__list {

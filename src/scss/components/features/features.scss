@@ -15,10 +15,6 @@
 .features__title {
     margin-top: 90px;
     margin-bottom: 23px;
-    @media (max-width: 1365px) {}
-    @media (max-width: 767px) {
-        font-size: 28px;
-    }
 }
 
 .features__descr {
@@ -33,8 +29,6 @@
     @media (max-width: 767px) {
         width: 271px;
         margin-bottom: 20px;
-        font-size: 14px;
-        line-height: 20px;
     }
 }
 

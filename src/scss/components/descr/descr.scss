@@ -1,0 +1,13 @@
+.describe {
+    color: $light-gold;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+@media (max-width: 767px) {
+    .describe {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

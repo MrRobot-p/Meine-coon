@@ -1,4 +1,5 @@
 .modal {
+    display: none;
     width: 680px;
     position: fixed;
     left: 50%;
@@ -14,16 +15,12 @@
     }
 }
 
-.modal-write {
-    display: none;
-}
-
-.modal-show {
+.modal--show {
     display: block;
     animation: bounce 0.6s;
 }
 
-.modal-close {
+.modal__close-btn {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -40,8 +37,8 @@
     }
 }
 
-.modal-close::before,
-.modal-close::after {
+.modal__close-btn::before,
+.modal__close-btn::after {
     content: "";
     position: absolute;
     top: 8px;
@@ -52,11 +49,11 @@
     background-color: $light-gold;
 }
 
-.modal-close::before {
+.modal__close-btn::before {
     transform: rotate(45deg);
 }
 
-.modal-close::after {
+.modal__close-btn::after {
     transform: rotate(-45deg);
 }
 
@@ -73,18 +70,18 @@
     line-height: 32px;
     color: $dark-gold;
     @media (max-width: 1365px) {
-        font-size: 18px;
-        line-height: 25px;
         width: 175px;
         margin: 20px auto 18px 20px;
+        font-size: 18px;
+        line-height: 25px;
     }
 }
 
 .modal__subtitle {
     margin: 0 auto 36px 40px;
     @media (max-width: 1365px) {
-        margin: 0 auto 18px 20px;
         width: 217px;
+        margin: 0 auto 18px 20px;
         font-size: 16px;
         line-height: 21px;
     }
